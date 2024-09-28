@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/administrador.css">
+    <title>Administrar usuarios</title>
+</head>
+<body>
+    <header>
+        <div class="info">
+            <h1>Administrador</h1>
+        </div>
+        <a href="loginAdmin.html" id="btnLogin">Cerrar sesion</a>
+
+    </header>
+    <main>
+        <section class="solicitudes">
+            <div>
+                <h2>Usuarios</h2>
+                <div id="datos"></div>
+                <div id="exito"></div>
+            </div>
+
+            <div class="img">
+                <img src="../sources/img/UCA-horizontal-400x102-1.png" alt="">
+            </div>
+                <h2 class="texto">Proyecto desarrollo web 1</h2>
+        </section>
+
+        <section class="container-opciones">
+            <div class="opciones">
+                <div class="info-opciones">
+                    <h2 class="texto">Mostrar datos</h2>
+                    <h4>- Se muestra la informacion de los usuarios</h4>
+                    <p>____________________________________________________</p>
+                </div>
+                <div class="container-btn-mostrar-datos">
+                    <input type="button" value="Mostrar solicitudes" id="btnSolicitar">
+                </div>
+
+                <div class="info-opciones">
+                    <h2 class="texto">Actualizar datos</h2>
+                    <h4>- Aqui podra actualizar los datos de los usuarios</h4>
+                    <p>____________________________________________________</p>
+                </div>
+                <div class="modificar-datos">
+                    <section class="section1">
+                        <div class="container-idPersona">
+                            <label for="">ID: </label>
+                            <input type="text" name="idUsuario" id="idUsuario">
+                            <input type="submit" id="btnSolicitarID" value="Buscar Usuario">
+                        </div>
+                        <div class="inputs">
+                            <label for="tipoId">Tipo de identifiacion </label>
+                            <select name="tipoId" id="tipoId">
+                                <option value="1">Nacional</option>
+                                <option value="2">Extranjero</option>
+                            </select>
+        
+                            <label for="numId">Numero de identificacion</label>
+                            <input type="number" name="numId" id="numId">
+        
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" name="nombre" id="nombre">
+                            
+                            <label for="apellido1">Apellido paterno</label>
+                            <input type="text" name="apellido1" id="apellido1">
+                        
+                            <label for="apellido2">Apellido materno</label>
+                            <input type="text" name="apellido2" id="apellido2">
+        
+                            <label for="numeroTel">Numero telefonico</label>
+                            <input type="text" name="numeroTel" id="numeroTel">
+                        
+                            <label for="correo">Correo electronico</label>
+                            <input type="email" name="correo" id="correo">
+        
+                            <label for="genero">Genero</label>
+                            <input type="text" name="genero" id="genero">
+        
+                            <label for="estadoCivil">Estado civil</label>
+                            <select name="estadoCivil" id="estadoCivil">
+                                <option value="1">Soltero(a)</option>
+                                <option value="2">Casado(a)</option>
+                                <option value="3">Divorciado(a)</option>
+                                <option value="4">Separacion en proceso judicial</option>
+                                <option value="5">Viudo</option>
+                                <option value="6">Concubinato</option>
+                            </select>
+                            
+                            <label for="nacionalidad">Nacionalidad</label>
+                            <input type="text" name="nacionalidad" id="nacionalidad">
+                        
+                            <label for="lugarNacimiento">lugar de nacimiento</label>
+                            <input type="text" name="lugarNacimiento" id="lugarNacimiento">
+        
+                            <label for="fechaNacimiento">Fecha de nacimiento</label>
+                            <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+        
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" name="domicilio" id="domicilio">
+                        
+                            <label for="provincia">Provincia</label>
+                            <select name="provincia" id="provincia">
+                                <option value="1">San jose</option>
+                                <option value="2">Alajuela</option>
+                                <option value="3">Cartago</option>
+                                <option value="4">Heredia</option>
+                                <option value="5">Guanacaste</option>
+                                <option value="6">Puntarenas</option>
+                                <option value="7">Limon</option>
+                            </select>
+
+                            <div class="container-btn-actualizar">
+                                <input type="button" value="Actualizar datos" id="btnActualizarDatos">
+                            </div>
+                        </div>
+                    </section>
+                </form>
+
+                </div>
+                <div class="info-opciones">
+
+                    <h2 class="texto">Eliminar usuarios</h2>
+                    <h4>- Aqui podra eliminar un usuario</h4>
+                    <p>____________________________________________________</p>
+                </div>
+                <div class="eliminar-datos">
+                    
+                    <label for="">ID</label>
+                    <input type="text" name="Usuario" id="idUsuarioEliminar">
+                    <input type="button" value="Eliminar usuario" id="btnEliminarDatos">
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>&#169 Universidad florencio del castillo</h3>
+    </footer>
+</body>
+</html>
+
+<script src="../requets/get.js"></script>
+<script src="../requets/put.js"></script>
+<script src="../requets/delete.js"></script>
+

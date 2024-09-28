@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #E5E5E5;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: #E5E5E5;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin-bottom: 5%;
+}
+
+
+.img-uca{
+    width: 300px;
+}
+
+#btnPagPrincipal{
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+#btnPagPrincipal:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+  }
+  
+#btnPagPrincipal:active {
+    outline: 0;
+  }
+  
+#btnPagPrincipal:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+  }
+  
+  
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    border:1px solid #eee;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+
+.formulario label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info{
+     margin-bottom: 50px ;
+}
+
+#imgBaseDatos{
+    width: 200px;
+}
+
+
+#usuario, #contraseña{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+#alerta{
+    margin: 0 auto;
+    color: red;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    margin-top: 40%;
+}
+
+
+#btnAdmin {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(10, 10, 10);
+    --btn-bg-2: rgb(90, 94, 88);
+    --btn-bg-color: rgb(0, 0, 0);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 10px 100px ;
+    min-width: 200px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(4, 5, 5, 0.5), 0px 5px 5px -1px
+    rgba(76, 81, 88, 0.25), inset 4px 4px 8px
+    rgba(173, 179, 182, 0.5), inset -4px -4px 8px
+    rgba(13, 15, 17, 0.35);
+    text-decoration: none;
+    color: white;
+  }
+  
+#ingresar:hover {
+    background-position: right top;
+}
+  
+#ingresar:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}

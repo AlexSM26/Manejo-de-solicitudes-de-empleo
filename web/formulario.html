@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/formulario.css">
+
+    <title>Formulario</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" id="btnPagPrincipal">Pagina principal</a>
+        <img src="../sources/img/UCA-horizontal-400x102-1.png" alt="" class="img-uca">
+        <a href= "loginAdmin.html" id="btnAdministrador">Iniciar sesion</a>
+    </header>
+
+    <main>
+        <div class="info">
+            <h2>Fomulario</h2>
+            <h2> <span>*</span> Campos obligatorios</h2>
+        </div>
+        <div class="container">
+            <form id="formulario">
+                <section class="section1">
+                    <label for="tipoId">Tipo de indentifiacion <span> *</span></label>
+                    <select name="tipoId" id="tipoId">
+                        <option value="1">Nacional</option>
+                        <option value="2">Extranjero</option>
+                    </select>
+
+                    <label for="numId">Numero de indentificacion<span> *</span></label>
+                    <input type="number" name="numId" id="numId" placeholder="#">
+
+                    <label for="nombre">Nombre completo<span> *</span></label>
+                    <input type="text" name="nombre" id="nombre" >
+                    
+                    <label for="apellido1">Apellido paterno<span> *</span></label>
+                    <input type="text" name="apellido1" id="apellido1">
+                
+                    <label for="apellido2">Apellido materno<span> *</span></label>
+                    <input type="text" name="apellido2" id="apellido2">
+
+                    <label for="numeroTel">Numero Telefonico<span> *</span></label>
+                    <input type="text" name="numeroTel" id="numeroTel" placeholder="#">
+                
+                    <label for="correo">Correo electronico<span> *</span></label>
+                    <input type="email" name="correo" id="correo" placeholder="ejemplo@gmail.com">
+
+                    <label for="genero">Genero<span> *</span></label>
+                    <input type="text" name="genero" id="genero">
+
+                    <label for="estadoCivil">Estado civil<span> *</span></label>
+                    <select name="estadoCivil" id="estadoCivil">
+                        <option value="1">Soltero(a)</option>
+                        <option value="2">Casado(a)</option>
+                        <option value="3">Divorciado(a)</option>
+                        <option value="4">Separacion en proceso judicial</option>
+                        <option value="5">Viudo</option>
+                        <option value="6">Concubinato</option>
+                    </select>
+                    
+                    <label for="nacionalidad">Nacionalidad<span> *</span></label>
+                    <input type="text" name="nacionalidad" id="nacionalidad">
+                
+                    <label for="lugarNacimiento">lugar de nacimiento<span> *</span></label>
+                    <input type="text" name="lugarNacimiento" id="lugarNacimiento">
+
+                    <label for="fechaNacimiento">Fecha de nacimiento<span> *</span></label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+
+                    <label for="domicilio">Domicilio<span> *</span></label>
+                    <input type="text" name="domicilio" id="domicilio">
+                
+                    <label for="provincia">Provincia<span> *</span></label>
+                    <select name="provincia" id="provincia">
+                        <option value="1">San jose</option>
+                        <option value="2">Alajuela</option>
+                        <option value="3">Cartago</option>
+                        <option value="4">Heredia</option>
+                        <option value="5">Guanacaste</option>
+                        <option value="6">Puntarenas</option>
+                        <option value="7">Limon</option>
+                    </select>
+                    <input type="button" value="Enviar datos" id="btnEnviarDatos">
+            </section>
+                </section>
+            </form>
+
+            <section class="section3">
+                    
+        </div>
+        <div id="errores"></div>
+    </main>
+    <footer>
+        <h3>&#169 Universidad florencio del castillo</h3>
+    </footer>
+   <script src="../requets/post.js"></script>
+
+
+
+</body>
+</html>

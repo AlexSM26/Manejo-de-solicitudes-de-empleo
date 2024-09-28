@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/loginAdmin.css">
+    <title>Iniciar sesion</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../sources/img/UCA-horizontal-400x102-1.png" alt="" class="img-uca">
+        </div>
+        <a href="../index.html" id="btnPagPrincipal">Pagina principal</a>
+        <div>
+            <h1>Desarrollo Web 1</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="info">
+                <h1>Login</h1>
+                <h2>Ingrese su nombre de usuario y contraseña</h2>
+            </div>
+            <div class="img">
+                <img src="../sources/img/base-datos.png" alt="" id="imgBaseDatos">
+            </div>
+            <div class="formulario">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario">
+
+
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña">
+                    
+                <div id="alerta"></div>  
+            </div>
+            
+            <div>
+                <button id="btnAdmin">Ingresar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/validarLogin.js"></script>
+    
+</body>
+</html>
