@@ -17,10 +17,13 @@ En el Back-End para gestionar las solicitudes y ofrecer una API REST que se cone
 </ul>
 
 # Instalacion
- > [!NOTE]
- > La terminal tiene que estar abierta dentro de la carpeta **data**
-
-En el proyecto se utiliza **json-server** para levantar nuestro servidor, por lo cual necesitaremos utilizar introducir el siguiente comando en el terminal:
+En el proyecto se utiliza **json-server** para levantar nuestro servidor, por lo cual necesitaremos introducir el siguiente comando en la terminal:
 <ul>
   <li>json-server--watch db.json</li>
 </ul>
+
+> [!NOTE]
+> La terminal tiene que estar abierta dentro de la carpeta **data**
+
+> [!TIP]
+> Podemos darle clic derecho a nuestra carpeta **data** y despues elegir la opcion de "Abrir en una Terminal Integrada" o en ingles "Open In Integrated Terminal"
