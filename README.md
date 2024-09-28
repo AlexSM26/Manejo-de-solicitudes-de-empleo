@@ -1,6 +1,6 @@
 # Manejo de solicitudes de empleo
 
-  Este es un proyecto universitario donde se desarrolló un pequeño sofware que integra diversas tecnologías con el fin de poder manejar diferentes solicitudes HTTP, el objetivo principal de este proyecto fue poner en practica lo aprendido a lo largo de curso y asi probar mis habilidades en el desarrollo web.
+  Este es un proyecto universitario donde se desarrolló un pequeño software que integra diversas tecnologías con el fin de poder manejar diferentes solicitudes HTTP, el objetivo principal de este proyecto fue poner en practica lo aprendido a lo largo de curso y asi probar mis habilidades en el desarrollo web.
 
 
 # Tecnologias utilizadas
